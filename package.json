@@ -1,7 +1,9 @@
 {
   "name": "glassmorphism-dashboard",
-  "private": true,
   "version": "0.0.0",
+  "description": "Glassmorphism Dashboard",
+  "author": "Abolfazl Panbehkar",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "dev": "vite",
