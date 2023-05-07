@@ -1,7 +1,9 @@
+import '@/assets/styles/index.css';
+
 const App = () => (
-  <div>
-    <span>Hello World!</span>
-  </div>
+  <main className="flex h-screen items-center justify-center">
+    <h1>Hello World!</h1>
+  </main>
 );
 
 export default App;
