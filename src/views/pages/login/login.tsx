@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { initialLoginData, LoginPayload, useLogin } from '@/api';
 import { useAuthStore } from '@/store';
+import { toast } from '@/toast';
 
 export const Login = () => {
   const { mutate } = useLogin();
@@ -15,7 +16,7 @@ export const Login = () => {
           image,
           token,
         });
-        console.log('You have successfully logged in!');
+        toast.success('You have successfully logged in!');
         navigate('/home');
       },
     });

@@ -1,10 +1,13 @@
-import { Api } from './api';
+import { Api } from '@/api';
+import { Toast } from '@/toast';
 import { Router } from '@/router';
 import '@/assets/styles/index.css';
 
 const App = () => (
   <Api>
-    <Router />
+    <Toast>
+      <Router />
+    </Toast>
   </Api>
 );
 

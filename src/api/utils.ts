@@ -6,13 +6,14 @@ import {
   UseQueryOptions,
   UseMutationOptions,
 } from '@tanstack/react-query';
+import { toast } from '@/toast';
 
 type ErrorMessage = AxiosError<{ message: string }>;
 
 // Error handling
 const onError = (error: ErrorMessage) => {
   const message = error.response?.data.message as string;
-  console.log(message);
+  toast.error(message);
 };
 
 // Get

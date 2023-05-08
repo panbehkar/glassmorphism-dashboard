@@ -1,11 +1,17 @@
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { privateRoutes } from '@/router';
-import { useSidebarStore } from '@/store';
+import { useSidebarStore, useAuthStore } from '@/store';
+import { toast } from '@/toast';
 import clsx from 'clsx';
 
 export const Sidebar = () => {
   const { isSidebarOpen } = useSidebarStore();
+  const { setAuth } = useAuthStore();
 
+  const handleLogout = () => {
+    setAuth(null);
+    toast.success('You have successfully logged out!');
+  };
   return (
     <aside
       className={clsx(
@@ -33,7 +39,7 @@ export const Sidebar = () => {
           </li>
         ))}
       </ul>
-      <Link to="/login">Logout</Link>
+      <button onClick={handleLogout}>Logout</button>
     </aside>
   );
 };
