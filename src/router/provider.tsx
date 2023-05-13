@@ -2,7 +2,7 @@ import { Suspense } from 'react';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import { useAuthStore } from '@/store';
 import { PublicLayout, PrivateLayout } from '@/views/layout';
-import { Loading, routesGenerator, publicRoutes, privateRoutes } from './index';
+import { Loading, routesGenerator, publicRoutes, privateRoutes } from '.';
 
 export const Router = () => {
   const { isAuth } = useAuthStore();

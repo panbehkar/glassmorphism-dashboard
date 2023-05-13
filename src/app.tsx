@@ -3,12 +3,10 @@ import { Toast } from '@/toast';
 import { Router } from '@/router';
 import '@/assets/styles/index.css';
 
-const App = () => (
+export const App = () => (
   <Api>
     <Toast>
       <Router />
     </Toast>
   </Api>
 );
-
-export default App;

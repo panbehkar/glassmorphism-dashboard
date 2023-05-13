@@ -21,6 +21,7 @@ export const Login = () => {
     handleSubmit,
     formState: { errors, isValid },
   } = useForm<LoginPayload>({
+    mode: 'all',
     resolver: zodResolver(loginSchema),
     defaultValues: initialLoginData,
   });
@@ -66,9 +67,7 @@ export const Login = () => {
         icon="icon-lock"
         autoComplete="off"
       />
-      <Button className="" disabled={!isValid}>
-        Submit
-      </Button>
+      <Button disabled={!isValid}>Submit</Button>
     </form>
   );
 };

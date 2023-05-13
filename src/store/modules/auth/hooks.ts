@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import { persist, createJSONStorage } from 'zustand/middleware';
-import { AuthStore } from './index';
+import { AuthStore } from '.';
 
 export const useAuthStore = create<AuthStore>()(
   persist(
