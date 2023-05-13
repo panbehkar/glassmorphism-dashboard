@@ -9,7 +9,7 @@ export const Toast = ({ children }: Children) => (
       toastOptions={{
         duration: 2500,
         className:
-          'bg-white/25 rounded-2xl shadow-[0_0_16px_-8px] shadow-black/10 backdrop-blur-lg',
+          '!bg-white/25 !rounded-2xl !shadow-[0_0_16px_-8px] !shadow-black/10 !backdrop-blur-lg',
         success: {
           icon: <i className="icon-check-circle text-2xl text-success"></i>,
         },
