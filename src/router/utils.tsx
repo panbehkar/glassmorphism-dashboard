@@ -1,5 +1,5 @@
 import { Route } from 'react-router-dom';
-import { RouteType } from './index';
+import { RouteType } from '.';
 
 export const routesGenerator = (routes: RouteType[]) =>
   routes.map(({ id, path, Element }) => (

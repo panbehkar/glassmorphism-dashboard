@@ -1,7 +1,7 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { Children } from '@/types';
 import { useAuthStore } from '@/store';
-import { setAxiosAuth } from './index';
+import { setAxiosAuth } from '.';
 
 const queryClient = new QueryClient({
   defaultOptions: {

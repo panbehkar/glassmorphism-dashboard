@@ -7,10 +7,7 @@ export const Menu = () => {
   const { isSidebarOpen } = useSidebarStore();
 
   return (
-    <ul
-      className="flex h-full w-full justify-center sm:flex-col sm:justify-start"
-      role="menu"
-    >
+    <ul className="flex w-full justify-center sm:flex-col" role="menu">
       {privateRoutes.map(
         ({ id, path, menu }) =>
           menu?.icon && (
@@ -18,9 +15,9 @@ export const Menu = () => {
               <NavLink
                 className={({ isActive }) =>
                   clsx(
-                    'hover:text-active flex h-12 w-full items-center rounded-2xl p-3 text-2xl transition-all',
+                    'flex h-12 w-full items-center rounded-2xl p-3 text-2xl transition-colors hover:text-active',
                     {
-                      'text-active bg-white': isActive,
+                      'bg-white text-active': isActive,
                     }
                   )
                 }

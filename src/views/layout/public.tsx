@@ -1,10 +1,12 @@
 import { Outlet } from 'react-router-dom';
-import { Root } from './index';
+import { Main, Glass, Sphere } from '.';
 
 export const PublicLayout = () => (
-  <Root>
-    <div className="rounded-4xl flex flex-col bg-cyan-100">
+  <Main>
+    <Glass className="flex-col">
+      <Sphere variant="primary" className="right-[-80px] top-[-80px]" />
       <Outlet />
-    </div>
-  </Root>
+      <Sphere variant="secondary" className="bottom-[-60px] left-[-60px]" />
+    </Glass>
+  </Main>
 );
