@@ -24,7 +24,7 @@ export const Input = ({
         )}
         <input
           className={clsx(
-            'autofill:shadow-autofill w-full rounded-full bg-white px-4 py-2 outline-none ring-1 transition-shadow',
+            'w-full rounded-full bg-white px-4 py-2 outline-none ring-1 transition-shadow autofill:shadow-[inset_0_0_0_1000px_#fff]',
             {
               'pl-[42px]': Boolean(icon),
               'ring-red-500': Boolean(errorMsg),

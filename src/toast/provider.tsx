@@ -6,15 +6,15 @@ export const Toast = ({ children }: Children) => (
     {children}
     <Toaster
       position="bottom-center"
-      gutter={16}
       toastOptions={{
         duration: 2500,
-        className: 'bg-white',
+        className:
+          'bg-white/25 rounded-2xl shadow-[0_0_16px_-8px] shadow-black/10 backdrop-blur-lg',
         success: {
-          icon: <i className="icon-check-circle text-2xl text-green-400"></i>,
+          icon: <i className="icon-check-circle text-2xl text-success"></i>,
         },
         error: {
-          icon: <i className="icon-close-circle text-2xl text-red-400"></i>,
+          icon: <i className="icon-close-circle text-2xl text-error"></i>,
         },
       }}
     />
