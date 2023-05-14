@@ -3,7 +3,7 @@ import { privateRoutes } from '@/router';
 import { useSidebarStore } from '@/store';
 import clsx from 'clsx';
 
-export const Menu = () => {
+export const SidebarMenu = () => {
   const { isSidebarOpen } = useSidebarStore();
 
   return (
