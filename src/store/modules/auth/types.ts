@@ -1,6 +1,7 @@
 export interface Auth {
   name: string;
   image: string;
+  email: string;
   token: string;
 }
 

@@ -28,10 +28,11 @@ export const Login = () => {
 
   const onSubmitHandler: SubmitHandler<LoginPayload> = login => {
     postLogin(login, {
-      onSuccess: ({ firstName, lastName, image, token }) => {
+      onSuccess: ({ firstName, lastName, image, email, token }) => {
         setAuth({
           name: `${firstName} ${lastName}`,
           image,
+          email,
           token,
         });
         toast.success('You have successfully logged in!');
